@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+Calculadora React
+Este projeto é uma calculadora funcional desenvolvida em React, com uma interface moderna e responsiva. A calculadora suporta operações básicas como soma, subtração, multiplicação, e divisão. Além disso, há a funcionalidade de alternar entre modo claro e modo escuro, inspirada no design da calculadora do iPhone.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Calculadora React
+(Adicione um print da calculadora funcionando aqui)
+📋 Funcionalidades
+Operações básicas: soma, subtração, multiplicação e divisão.
+Cálculo dinâmico: os números e operações são exibidos no visor em tempo real.
+Botão "C": limpa o visor e reseta os cálculos.
+Modo claro e escuro: alterna entre os temas com um clique.
+Responsividade: ajusta-se a diferentes tamanhos de tela (como desktop, tablet e celular).
+🚀 Tecnologias Utilizadas
+O projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 
-## Available Scripts
+ReactOpens in a new window; external.: biblioteca para construção de interfaces de usuário.
+Styled-ComponentsOpens in a new window; external.: estilização com componentes CSS-in-JS.
+JavaScript (ES6+): para manipulação de lógica.
+Create React App: estrutura inicial do projeto.
+📂 Estrutura do Projeto
+plaintext
+Copy
+Calculadora
+├── /node_modules                # Dependências instaladas pelo npm
+├── /public                      # Arquivos públicos (HTML, favicon, etc.)
+│   ├── favicon.ico              # Ícone do navegador
+│   ├── index.html               # HTML principal
+│   ├── manifest.json            # Configuração PWA
+│   └── robots.txt               # Controle de indexação de motores de busca
+├── /src                         # Código-fonte do projeto
+│   ├── /components              # Componentes reutilizáveis
+│   │   ├── /Button              # Componente de botão
+│   │   │   ├── Button.jsx
+│   │   │   └── styles.js
+│   │   ├── /Input               # Componente do visor
+│   │   │   ├── Input.jsx
+│   │   │   └── styles.js
+│   ├── /styles                  # Centralização de estilos globais e temas
+│   │   ├── global.js            # Estilos globais
+│   │   ├── theme.js             # Definição de temas (claro e escuro)
+│   │   └── styles.js            # Estilos da calculadora
+│   ├── /utils                   # Funções utilitárias
+│   │   └── calculator.js        # Lógica de cálculo
+│   ├── App.jsx                  # Componente principal da aplicação
+│   ├── index.js                 # Ponto de entrada da aplicação
+├── .gitignore                   # Arquivos ignorados pelo Git
+├── package.json                 # Dependências e scripts do projeto
+├── README.md                    # Documentação do projeto
+└── yarn.lock / package-lock.json # Controle de versão das dependências
+📦 Como Rodar o Projeto
+Siga os passos abaixo para clonar e rodar o projeto na sua máquina local:
 
-In the project directory, you can run:
+Pré-requisitos
+Node.js instalado (versão 14 ou superior).
+Um gerenciador de pacotes: npm ou yarn.
+Instalação
+Clone o repositório:
 
-### `npm start`
+bash
+Copy
+git clone https://github.com/seu-usuario/calculadora-react.git
+cd calculadora-react
+Instale as dependências:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy
+npm install
+# ou, se você usar yarn:
+yarn install
+Inicie o servidor de desenvolvimento:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy
+npm start
+# ou
+yarn start
+Abra o navegador:
 
-### `npm test`
+O projeto estará rodando em http://localhost:3000.
+🔧 Como Usar
+Inserir números: Clique nos botões numéricos para digitar os números na calculadora.
+Escolher uma operação: Clique em um botão de operação (+, -, *, /) para escolher uma operação.
+Calcular: Pressione o botão = para calcular o resultado.
+Limpar: Pressione o botão C para limpar o visor e resetar os cálculos.
+Alternar Tema: Clique no botão "Alternar Tema" para mudar entre modo claro e escuro.
+🖼️ Screenshots
+Modo Claro
+(Adicione uma imagem do modo claro funcionando)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Modo Claro
+Modo Escuro
+(Adicione uma imagem do modo escuro funcionando)
 
-### `npm run build`
+Modo Escuro
+📚 Aprendizados
+Durante o desenvolvimento deste projeto, foram aplicados conceitos importantes como:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Componentização em React.
+Uso de Styled-Components para estilização dinâmica.
+Implementação de temas (claro/escuro) com ThemeProvider.
+Lógica de cálculo matemático com JavaScript.
+Responsividade para diferentes dispositivos.
+🤝 Contribuições
+Contribuições são bem-vindas! Se você quiser sugerir melhorias ou encontrar bugs, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚖️ Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSEOpens in a new window; external. para mais detalhes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
